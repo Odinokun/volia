@@ -1,17 +1,78 @@
-//begin top-section
-//.top-section#slider-section
-  .container
-    .top-section__item
-      h2.top-section__title
-        |Що
-        br
-        |дивимось
-        br
-        |на
-        br
-        |свята?
-      span.top-section__subtitle Голосуй за свое улюблене шоу та вигравай призи від ВОЛЯ!
-      a(href="#").top-section__arrow.scroll
-        .top-section__arrow-down
+//begin slider-section
+.slider-section#slider-section
+  //begin slider-bg
+  .slider-bg#slider-bg
+    .slider-bg__slide(style='background-image: url("assets/img/bg-slide-01.jpg")')
+    .slider-bg__slide(style='background-image: url("assets/img/bg-slide-02.jpg")')
+    .slider-bg__slide(style='background-image: url("assets/img/bg-slide-01.jpg")')
+    .slider-bg__slide(style='background-image: url("assets/img/bg-slide-02.jpg")')
+    .slider-bg__slide(style='background-image: url("assets/img/bg-slide-01.jpg")')
+    .slider-bg__slide(style='background-image: url("assets/img/bg-slide-02.jpg")')
+  //end slider-bg
 
-//end top-section
+  .container
+    //begin slider-section__header
+    header.slider-section__header
+      h2.slider-section__title Що дивитимось на свята?
+      span.slider-section__subtitle Голосуй за свое улюблене шоу та ділись ним у соцІАЛЬНИХ мережах
+    //end slider-section__header
+
+    //begin slider-section__slider
+    .slider-section__slider
+      //begin slider-sm
+      .slider-sm#slider-sm
+        .slider-sm__item
+          .slider-sm__video
+            iframe(src="https://www.youtube.com/embed/aacHWoB7cmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .slider-sm__text
+            h3.slider-sm__title Королева манiкюру
+            p На Лонг-Айленді сотні манікюрних салонів. Але є один, який виділяється серед всіх. Це салон Лексі Мартон. Справжнього нігтьового митця. Вона пише прекрасні картини на пальцях своїх клієнтів. Лексі тримає бізнес разом зі своєю не менш харизматичною родиною, і це їх історія успіху.
+        .slider-sm__item
+          .slider-sm__video
+            iframe(src="https://www.youtube.com/embed/rdwUhmN7oYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .slider-sm__text
+            h3.slider-sm__title Королева манiкюру
+            p На Лонг-Айленді сотні манікюрних салонів. Але є один, який виділяється серед всіх. Це салон Лексі Мартон. Справжнього нігтьового митця. Вона пише прекрасні картини на пальцях своїх клієнтів. Лексі тримає бізнес разом зі своєю не менш харизматичною родиною, і це їх історія успіху.
+        .slider-sm__item
+          .slider-sm__video
+            iframe(src="https://www.youtube.com/embed/aacHWoB7cmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .slider-sm__text
+            h3.slider-sm__title Королева манiкюру
+            p На Лонг-Айленді сотні манікюрних салонів. Але є один, який виділяється серед всіх. Це салон Лексі Мартон. Справжнього нігтьового митця. Вона пише прекрасні картини на пальцях своїх клієнтів. Лексі тримає бізнес разом зі своєю не менш харизматичною родиною, і це їх історія успіху.
+        .slider-sm__item
+          .slider-sm__video
+            iframe(src="https://www.youtube.com/embed/rdwUhmN7oYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .slider-sm__text
+            h3.slider-sm__title Королева манiкюру
+            p На Лонг-Айленді сотні манікюрних салонів. Але є один, який виділяється серед всіх. Це салон Лексі Мартон. Справжнього нігтьового митця. Вона пише прекрасні картини на пальцях своїх клієнтів. Лексі тримає бізнес разом зі своєю не менш харизматичною родиною, і це їх історія успіху.
+        .slider-sm__item
+          .slider-sm__video
+            iframe(src="https://www.youtube.com/embed/aacHWoB7cmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .slider-sm__text
+            h3.slider-sm__title Королева манiкюру
+            p На Лонг-Айленді сотні манікюрних салонів. Але є один, який виділяється серед всіх. Це салон Лексі Мартон. Справжнього нігтьового митця. Вона пише прекрасні картини на пальцях своїх клієнтів. Лексі тримає бізнес разом зі своєю не менш харизматичною родиною, і це їх історія успіху.
+        .slider-sm__item
+          .slider-sm__video
+            iframe(src="https://www.youtube.com/embed/rdwUhmN7oYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .slider-sm__text
+            h3.slider-sm__title Королева манiкюру
+            p На Лонг-Айленді сотні манікюрних салонів. Але є один, який виділяється серед всіх. Це салон Лексі Мартон. Справжнього нігтьового митця. Вона пише прекрасні картини на пальцях своїх клієнтів. Лексі тримає бізнес разом зі своєю не менш харизматичною родиною, і це їх історія успіху.
+      //end slider-sm
+    //end slider-section__slider
+
+    //begin slider-section__btn-row
+    .slider-section__btn-row
+      a(href="#").slider-section__btn Голосувати
+    //end slider-section__btn-row
+
+    //begin slider-section__footer
+    footer.slider-section__footer
+      .slider-section__footer-img
+        img(src="assets/img/logo-volia-white.png" alt="volia")
+      .slider-section__footer-img
+        img(src="assets/img/logo-discovery-white.png" alt="discovery")
+      .slider-section__footer-img
+        img(src="assets/img/logo-tlc-white.png" alt="tlc")
+    //end slider-section__footer
+
+//end slider-section

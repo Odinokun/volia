@@ -1,23 +1,30 @@
 @font-face {
-  font-family: OpenSans;
-  src:  url('../fonts/OpenSans.woff2') format('woff2'),
-        url('../fonts/OpenSans.woff')  format('woff');
+  font-family: DINPro;
+  src:  url('../fonts/DINPro.woff2') format('woff2'),
+        url('../fonts/DINPro.woff')  format('woff');
 }
 
 @font-face {
-  font-family: OpenSans-Light;
-  src:  url('../fonts/OpenSans-Light.woff2') format('woff2'),
-        url('../fonts/OpenSans-Light.woff')  format('woff');
+  font-family: DINPro-Light;
+  src:  url('../fonts/DINPro-Light.woff2') format('woff2'),
+        url('../fonts/DINPro-Light.woff')  format('woff');
 }
 
 @font-face {
-  font-family: OpenSans-Bold;
-  src:  url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-        url('../fonts/OpenSans-Bold.woff')  format('woff');
+  font-family: DINPro-Bold;
+  src:  url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff')  format('woff');
 }
 
 @font-face {
-  font-family: OpenSans-Semibold;
-  src:  url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
-        url('../fonts/OpenSans-Semibold.woff')  format('woff');
+  font-family: DINPro-Medium;
+  src:  url('../fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium.woff')  format('woff');
+}
+
+
+@font-face {
+  font-family: DINPro-Black;
+  src:  url('../fonts/DINPro-Black.woff2') format('woff2'),
+        url('../fonts/DINPro-Black.woff')  format('woff');
 }

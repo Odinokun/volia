@@ -61,8 +61,25 @@ input {
   color: #fff;
   border: 1px solid #fff;
   background: transparent;
-  &::placeholder {
-    @include placeholder-color(#fff);
+  /* Chrome/Opera/Safari */
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+  }
+  /* Firefox 19+ */
+  &::-moz-placeholder {
+    opacity: 1;
+    color: #fff !important;
+  }
+  /* IE 10+ */
+  &:-ms-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+  }
+  /* Firefox 18- */
+  &:-moz-placeholder {
+    opacity: 1;
+    color: #fff !important;
   }
 }
 
@@ -73,8 +90,21 @@ textarea {
 input.error,
 textarea.error {
   color: #d21998 !important;
-  border-color: #d21998 !important;
   background: transparent !important;
+  border: 2px solid #d21998 !important;
+  font-size: 20px;
+  &::-webkit-input-placeholder {
+    color: #d21998 !important;
+  }
+  &::-moz-placeholder {
+    color: #d21998 !important;
+  }
+  &:-ms-input-placeholder {
+    color: #d21998 !important;
+  }
+  &:-moz-placeholder {
+    color: #d21998 !important;
+  }
 }
 
 svg {

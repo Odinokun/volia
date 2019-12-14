@@ -1,0 +1,46 @@
+//begin form-section
+.form-section
+  .container
+    //begin form-section__header
+    header.form-section__header
+      h2.form-section__title заРеєструйтесь, щоб виграти приз
+    //end form-section__header
+
+    //begin form-section__main
+    .form-section__main
+      .form-section__img
+        img(src="assets/img/prize.png" alt="prize")
+      //begin form-section__form
+      .form-section__form.form
+        .form__header
+          img(src="assets/img/form-male.png" alt="picture")
+        form.form__form
+          input(placeholder='Ім’я' required).form__input
+          input(placeholder='прiзвище' required).form__input.error
+          input(placeholder='тел.' required).form__input
+          .form__labels
+            label.form__label
+              input(type='checkbox')
+              span Я є абонентом ВОЛЯ
+                +svg('check')
+            label.form__label
+              input(type='checkbox')
+              span
+                |Я погоджуюся з
+                =' '
+                a(href="#") умовами акції
+                +svg('check')
+          input(type='submit' value='Взяти участь').form__submit
+      //end form-section__form
+    //end form-section__main
+
+    //begin form-section__footer
+    footer.form-section__footer
+      .form-section__footer-img
+        img(src="assets/img/logo-volia-white.png" alt="volia")
+      .form-section__footer-img
+        img(src="assets/img/logo-discovery-white.png" alt="discovery")
+      .form-section__footer-img
+        img(src="assets/img/logo-tlc-white.png" alt="tlc")
+    //end form-section__footer
+//end form-section

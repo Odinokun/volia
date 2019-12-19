@@ -15,21 +15,23 @@
         .form__header
           img(src="assets/img/form-male.png" alt="picture")
         form.form__form
-          input(placeholder='Ім’я' required).form__input
-          input(placeholder='прiзвище' required).form__input.error
-          input(placeholder='тел.' required).form__input
+          input(placeholder='Ім’я *' required).form__input
+          input(placeholder='Прiзвище *' required).form__input.error
+          input(placeholder='+38 (___) ___-__-__*' required).form__input.phone-mask
           .form__labels
             label.form__label
               input(type='checkbox')
-              span Я є абонентом ВОЛЯ
+              span Я є абонентом ВОЛЯ *
                 +svg('check')
             label.form__label
               input(type='checkbox')
               span
                 |Я погоджуюся з
                 =' '
-                a(href="#") умовами акції
+                a(href="#") умовами акції *
                 +svg('check')
+            span.form__musthave * обов'язкове поле
+
           input(type='submit' value='Взяти участь').form__submit
       //end form-section__form
     //end form-section__main

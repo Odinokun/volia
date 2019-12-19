@@ -12,7 +12,6 @@ $(function() {
   // begin Popup
   require('./modules/popup')();
 
-  // begin Animate.css
-  // require('./modules/animateCss')();
+  require('./modules/maskedinput')();
 
 });

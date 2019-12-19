@@ -1,16 +1,18 @@
 .header {
-  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1112px;
-    height: 140px;
+    max-width: 1051px;
+    height: 106px;
 
     @include max(600) {
-      height: 100px;
-    }
-    @include max(425) {
       height: 70px;
     }
   }
@@ -22,4 +24,16 @@
     display: block;
     max-width: 100%;
   }
+}
+
+.header__logo--volia {
+  max-width: 261px;
+}
+
+.header__logo--discovery {
+  max-width: 334px;
+}
+
+.header__logo--tlc {
+  max-width: 157px;
 }

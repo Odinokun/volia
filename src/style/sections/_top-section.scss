@@ -3,20 +3,18 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+
+  @include max(700) {
+    background-image: url('../img/bg-top-section-700.jpg');
+  }
+
   .container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    min-height: calc(100vh - 140px);
-    padding-top: 30px;
+    min-height: 100vh;
+    padding-top: 140px;
     padding-bottom: 50px;
-
-    @include max(600) {
-      min-height: calc(100vh - 100px);
-    }
-    @include max(425) {
-      min-height: calc(100vh - 70px);
-    }
   }
 }
 
@@ -27,46 +25,62 @@
 }
 
 .top-section__title {
-  font-family: $black;
-  font-size: 130px;
-  font-weight: 400;
-  line-height: .8;
+  font-family: $light;
+  line-height: 1.1;
   margin-bottom: 70px;
   user-select: none;
   text-align: center;
-  letter-spacing: 33.8px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.top-section__title--01 {
+  font-size: 150px;
+  display: block;
 
   @include max(1200) {
     font-size: 100px;
-    letter-spacing: 20px;
-  }
-  @include max(880) {
-    font-size: 70px;
-    letter-spacing: 20px;
-  }
-  @include max(600) {
-    font-size: 50px;
-    letter-spacing: 14px;
   }
   @include max(425) {
-    font-size: 35px;
+    font-size: 70px;
+  }
+}
+
+.top-section__title--02 {
+  font-size: 118px;
+  display: block;
+
+  @include max(1200) {
+    font-size: 70px;
+  }
+  @include max(425) {
+    font-size: 50px;
+  }
+}
+
+.top-section__title--03 {
+  font-size: 71px;
+  display: block;
+
+  @include max(1200) {
+    font-size: 50px;
+  }
+  @include max(425) {
+    font-size: 40px;
   }
 }
 
 .top-section__subtitle {
-  font-family: $font;
-  font-size: 44px;
-  font-weight: 500;
+  font-family: $light;
+  font-size: 35px;
+  font-weight: 300;
   line-height: 43px;
   display: block;
-  max-width: 850px;
+  max-width: 570px;
   margin-bottom: 25px;
   user-select: none;
   text-align: center;
-  letter-spacing: 3.52px;
-  text-transform: uppercase;
+  letter-spacing: 2.8px;
   color: #eef3fb;
 
   @include max(1200) {

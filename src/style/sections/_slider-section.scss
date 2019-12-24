@@ -125,22 +125,22 @@
     }
   }
   .slick-prev {
-    left: -60px;
+    left: -50px;
     border-right: 19px solid #fff;
 
     @include max(1300) {
-      left: -40px;
+      left: -35px;
     }
     @include max(600) {
       left: -40px;
     }
   }
   .slick-next {
-    right: -10px;
+    right: -50px;
     border-left: 19px solid #fff;
 
     @include max(1300) {
-      right: 0;
+      right: -35px;
     }
     @include max(600) {
       right: -40px;
@@ -159,6 +159,7 @@
   }
   .slick-current {
     align-items: flex-start;
+    //padding: 0 10px;
 
     .slider-sm__video {
       transform: scale(1) translateX(0);
@@ -188,7 +189,7 @@
 
 .slider-sm__video {
   margin-bottom: 17px;
-  margin-left: 5px;
+  //margin-left: 5px;
   transition: transform .5s;
 
   @include max(600) {
@@ -196,16 +197,17 @@
   }
   iframe {
     display: block;
-    width: 501px;
+    //width: 501px;
+    width: 100%;
     height: 282px;
 
     @include max(1300) {
-      width: 400px;
+      //width: 400px;
       height: 225px;
     }
     @include max(600) {
-      width: 100%;
-      max-width: 400px;
+      //width: 100%;
+      //max-width: 450px;
       margin-right: auto;
       margin-left: auto;
     }

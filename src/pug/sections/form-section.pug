@@ -12,12 +12,24 @@
         img(src="assets/img/prize.png" alt="prize")
       //begin form-section__form
       .form-section__form.form
-        .form__header
-          img(src="assets/img/form-male.png" alt="picture")
         form.form__form
+          .form__header
+            label.form-male
+              input(type='radio' name='male')
+              span.form-male__icon
+                +svg('male')
+                span.form-male__error
+                  +svg('error')
+            label.form-male
+              input(type='radio' name='male')
+              span.form-male__icon
+                +svg('fem')
+                span.form-male__error
+                  +svg('error')
+
           input(placeholder='Ім’я *' required).form__input
           input(placeholder='Прiзвище *' required).form__input.error
-          input(placeholder='+38 (___) ___-__-__*' required).form__input.phone-mask
+          input(placeholder='+38 (0__) ___-__-__' required).form__input.phone-mask
           .form__labels
             label.form__label
               input(type='checkbox')

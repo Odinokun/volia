@@ -83,9 +83,6 @@
   letter-spacing: 2.8px;
   color: #eef3fb;
 
-  @include max(1200) {
-    font-size: 35px;
-  }
   @include max(880) {
     font-size: 26px;
     line-height: 1.2;

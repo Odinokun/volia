@@ -82,13 +82,58 @@
 
 .form__header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  max-width: 480px;
-  margin-bottom: 35px;
-  img {
-    display: block;
-    width: 154px;
+  max-width: 154px;
+  margin: 0 auto 35px;
+}
+
+.form-male {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 50px;
+  height: 70px;
+  cursor: pointer;
+  user-select: none;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  svg {
+    fill: rgba(255, 255, 255, .4);
+  }
+}
+
+.form-male input:checked + .form-male__icon svg {
+  fill: #fff;
+}
+
+.form-male.error svg {
+  fill: #d21998;
+}
+
+.form-male__icon {
+  & > svg {
+    width: 50px;
+    height: 70px;
+  }
+}
+
+.form-male__error {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  svg {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -175,14 +220,14 @@
   opacity: 1;
 }
 
-.form__musthave{
-  transform: translateY(-15px);
-  display: block;
-  opacity: 0.21;
-  color: #ffffff;
+.form__musthave {
   font-family: $medium;
   font-size: 18px;
   font-weight: 500;
+  display: block;
+  transform: translateY(-15px);
+  opacity: .21;
+  color: #fff;
 }
 
 .form__submit {

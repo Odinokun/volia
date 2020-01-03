@@ -38,7 +38,7 @@
   font-size: 150px;
   display: block;
 
-  @include max(1200) {
+  @include max(1500) {
     font-size: 100px;
   }
   @include max(425) {
@@ -50,7 +50,7 @@
   font-size: 118px;
   display: block;
 
-  @include max(1200) {
+  @include max(1500) {
     font-size: 70px;
   }
   @include max(425) {
@@ -62,7 +62,7 @@
   font-size: 71px;
   display: block;
 
-  @include max(1200) {
+  @include max(1500) {
     font-size: 50px;
   }
   @include max(425) {
@@ -83,7 +83,7 @@
   letter-spacing: 2.8px;
   color: #eef3fb;
 
-  @include max(880) {
+  @include max(1200) {
     font-size: 26px;
     line-height: 1.2;
   }
